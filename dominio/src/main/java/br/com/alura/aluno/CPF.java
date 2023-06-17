@@ -2,12 +2,16 @@ package br.com.alura.aluno;
 
 public class CPF {
 
-    private String value;
+    private String numero;
 
-    public CPF(String value) {
-        if (value == null || !value.matches("\\d{3}\\.\\d{3}\\.\\d{3}\\-\\d{2}"))
+    public CPF(String numero) {
+        if (numero == null || !numero.matches("\\d{3}\\.\\d{3}\\.\\d{3}\\-\\d{2}"))
             throw new IllegalArgumentException("CPF invalido!");
 
-        this.value = value;
+        this.numero = numero;
+    }
+
+    public String getNumero() {
+        return numero;
     }
 }
