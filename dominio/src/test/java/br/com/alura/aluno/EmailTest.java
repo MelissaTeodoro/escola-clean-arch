@@ -1,6 +1,5 @@
-package br.com.alura;
+package br.com.alura.aluno;
 
-import br.com.alura.aluno.Email;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
